@@ -1,9 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
-    <title>My Web Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishani | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <h1>Hello, GitHub!</h1>
+<body class="bg-[#0d1117] text-slate-200">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-[#161b22]/90 backdrop-blur-sm z-50 shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold">Ishani.</a>
+      <ul class="hidden md:flex space-x-8">
+        <li><a href="#home" class="hover:text-cyan-400">Home</a></li>
+        <li><a href="#about" class="hover:text-cyan-400">About</a></li>
+        <li><a href="#skills" class="hover:text-cyan-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-cyan-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-cyan-400">Contact</a></li>
+      </ul>
+      <!-- Mobile -->
+      <button id="menu-toggle" class="md:hidden text-slate-200">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+      <a href="#home" class="block hover:text-cyan-400">Home</a>
+      <a href="#about" class="block hover:text-cyan-400">About</a>
+      <a href="#skills" class="block hover:text-cyan-400">Skills</a>
+      <a href="#projects" class="block hover:text-cyan-400">Projects</a>
+      <a href="#contact" class="block hover:text-cyan-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex items-center pt-24">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Hi, I'm Ishani Disanayaka </h1>
+        <h2 class="text-cyan-400 font-bold mb-3 text-2xl">UI/UX Engineer</h2>
+        <p>I design and build modern, responsive web apps that are fast, accessible, and visually engaging. My focus is on creating intuitive user experiences with clean, functional design.</p><br>
+        <div class="flex space-x-4">
+          <a href="#contact" class="px-6 py-3 bg-cyan-500 text-white hover:bg-cyan-600">Hire Me</a>
+          <a href="#projects" class="px-6 py-3 border border-cyan-500 text-cyan-500 hover:bg-cyan-500/20">View Work</a>
+        </div>
+        <div class="flex mt-8 space-x-4">
+          <a href="#" class="social"><i class="fab fa-github"></i></a>
+          <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center mt-10 md:mt-0">
+        <div class="relative w-72 h-72 md:w-96 md:h-96">
+          <div class="absolute inset-0 bg-cyan-500/30 blur-3xl rounded-full"></div>
+          <img src="Capture7-removebg-preview.png" alt="Profile" class="relative w-full h-full rounded-full border-4 border-slate-700 object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-[#161b22]">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4"><span class="text-cyan-400">About Me</span></h2>
+      <p class="text-slate-400 max-w-2xl mx-auto">I’m a UI/UX Engineer with 2 years of experience designing and developing user-friendly interfaces and seamless digital experiences. I’m passionate about blending creativity with technology to build products that are not only visually appealing but also highly functional and intuitive. My focus is on crafting solutions that enhance usability and deliver real value to users.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+<section id="skills" class="py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">
+      <span class="text-cyan-400">My Skills</span>
+    </h2>
+
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <!-- Technical Skills -->
+      <div class="card fade-up p-6">
+        <h3 class="text-xl font-semibold mb-6 text-cyan-400"> Technical Skills</h3>
+
+        <div class="mb-4">
+          <p class="text-slate-300 font-medium">UI/UX Design (Figma, Adobe XD)</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-2">
+            <div class="bg-cyan-400 h-2 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p class="text-slate-300 font-medium">Frontend Development (HTML, CSS, JS, React)</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-2">
+            <div class="bg-cyan-400 h-2 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p class="text-slate-300 font-medium">Responsive Design (Tailwind, Bootstrap)</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-2">
+            <div class="bg-cyan-400 h-2 rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p class="text-slate-300 font-medium">Version Control (Git & GitHub)</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-2">
+            <div class="bg-cyan-400 h-2 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Skills -->
+      <div class="card fade-up p-6">
+        <h3 class="text-xl font-semibold mb-6 text-cyan-400">Professional Skills</h3>
+
+        <div class="mb-4">
+          <p class="text-slate-300 font-medium">Communication & Collaboration</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-2">
+            <div class="bg-cyan-400 h-2 rounded-full" style="width: 95%"></div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p class="text-slate-300 font-medium">Problem Solving & Creativity</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-2">
+            <div class="bg-cyan-400 h-2 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p class="text-slate-300 font-medium">Time Management</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-2">
+            <div class="bg-cyan-400 h-2 rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <p class="text-slate-300 font-medium">Leadership & Project Management</p>
+          <div class="w-full bg-gray-700 rounded-full h-2 mt-2">
+            <div class="bg-cyan-400 h-2 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-[#161b22]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12"><span class="text-cyan-400">My Projects</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card fade-up">
+          <img src="Capture.PNG" alt="Project 1" class="rounded-lg mb-4">
+          <h3 class="font-bold text-xl mb-2">Hotel Website</h3>
+          <p class="text-slate-400">Created a responsive Hotel Booking Website using Notepad++ & WordPress, focusing on user-friendly design, booking functionality, and smooth customer experience.</p>
+        </div>
+
+        <a href="https://www.figma.com/design/OZPiaVFUWqACO5RGVYr18j/login--Community-?node-id=0-1&p=f&t=9w0hJmbdKBoga8Li-0" target="_blank" class="block">
+          <div class="card fade-up hover:scale-105 transition-transform duration-300">
+            <img src="Screenshot (5).png" alt="Mobile App Project" class="rounded-lg mb-4">
+            <h3 class="font-bold text-xl mb-2">Mobile Application</h3>
+            <p class="text-slate-400">
+              Designed a modern mobile app using Figma with intuitive navigation, responsive layouts, and smooth user experience.
+            </p>
+          </div>
+        </a>
+
+        <div class="card fade-up">
+          <img src="Capture3.PNG" alt="Project 3" class="rounded-lg mb-4">
+          <h3 class="font-bold text-xl mb-2">Medical Centre Website</h3>
+          <p class="text-slate-400">Developed a responsive Medical Centre website using WordPress, with a clean UI, service details, and easy navigation for patients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4"><span class="text-cyan-400">Get In Touch</span></h2>
+      <form class="max-w-lg mx-auto space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-[#161b22] border border-slate-700 focus:outline-none">
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-[#161b22] border border-slate-700 focus:outline-none">
+        <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded bg-[#161b22] border border-slate-700 focus:outline-none"></textarea>
+        <button class="w-full px-6 py-3 rounded bg-cyan-500 hover:bg-cyan-600">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#161b22] py-6 text-center text-slate-400">
+    <p>© 2025 Ishani | Portfolio</p>
+  </footer>
+
+  <!-- Animation Script -->
+  <script>
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
